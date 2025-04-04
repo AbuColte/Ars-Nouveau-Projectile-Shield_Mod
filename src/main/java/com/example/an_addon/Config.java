@@ -5,7 +5,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.config.ModConfigEvent;
 
 @Mod.EventBusSubscriber
-public class ExampleConfig {
+public class Config {
 
     @SubscribeEvent
     public static void onLoad(final ModConfigEvent.Loading configEvent) { }

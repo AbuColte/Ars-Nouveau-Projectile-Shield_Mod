@@ -38,7 +38,7 @@ public class ANProjectileShieldBlock extends BaseEntityBlock {
 
         if (!level.isClientSide) {
             level.playSound(null, pos, SoundEvents.BEACON_ACTIVATE, SoundSource.BLOCKS,
-                    2.0F, 0.5F);
+                    2.0F, 1.0F);
         }
     }
 }

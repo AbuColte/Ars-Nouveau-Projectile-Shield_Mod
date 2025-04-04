@@ -15,14 +15,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(ExampleANAddon.MODID)
-public class ExampleANAddon
+@Mod(ANShieldMainMod.MODID)
+public class ANShieldMainMod
 {
     public static final String MODID = "arsshield";
 
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public ExampleANAddon() {
+    public ANShieldMainMod() {
         IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();
         modbus.addListener(this::setup);
         modbus.addListener(this::doClientStuff);

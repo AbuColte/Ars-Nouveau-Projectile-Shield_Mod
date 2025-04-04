@@ -43,13 +43,13 @@ public class ANProjectileShieldBlockEntity extends BlockEntity {
             if (tile.timer > 10){
                 tile.timer = 0;
                 spawnParticles(level, pos);
-                tile.hurtMobs();
+                tile.checkANProjectile();
             }
         }
 
     }
     final int RANGE = 15;
-    private void hurtMobs() {
+    private void checkANProjectile() {
         BlockPos topCorner = this.worldPosition.offset(RANGE, RANGE, RANGE);
         BlockPos bottomCorner = this.worldPosition.offset(-RANGE, -RANGE, -RANGE);
         AABB box = new AABB(topCorner, bottomCorner);
@@ -57,36 +57,18 @@ public class ANProjectileShieldBlockEntity extends BlockEntity {
         List<Entity> entities = this.level.getEntities(null, box);
         for (Entity target : entities) {
             if (target instanceof EntityProjectileSpell && !(target instanceof Player)) {
-                // Store position before discarding
                 double x = target.getX();
                 double y = target.getY();
                 double z = target.getZ();
-
-                // Remove the projectile
                 target.discard();
 
-                // Play explosion effect (client-side only)
-                if (!level.isClientSide) {
-                    // Explosion particles
-                    for (int i = 0; i < 20; i++) {
-                        level.addParticle(ParticleTypes.EXPLOSION,
-                                x, y, z,
-                                (level.random.nextDouble() - 0.5) * 0.5,
-                                level.random.nextDouble() * 0.5,
-                                (level.random.nextDouble() - 0.5) * 0.5);
-                    }
-
-                    // Additional smoke particles
-                    level.addParticle(ParticleTypes.EXPLOSION_EMITTER, x, y, z, 0, 0, 0);
-                }
-                if (!level.isClientSide) {
+                    // PLay sound at check
                     level.playSound(null,
                             new BlockPos((int)x, (int)y, (int)z),
                             SoundEvents.GENERIC_EXPLODE,
                             SoundSource.BLOCKS,
                             1.0f,
                             (1.0f + (level.random.nextFloat() - level.random.nextFloat()) * 0.2f));
-                }
             }
         }
     }
