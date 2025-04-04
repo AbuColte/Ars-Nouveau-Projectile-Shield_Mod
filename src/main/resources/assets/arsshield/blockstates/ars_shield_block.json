@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "arsshield:block/ars_shield_block"
+    }
+  }
+}
