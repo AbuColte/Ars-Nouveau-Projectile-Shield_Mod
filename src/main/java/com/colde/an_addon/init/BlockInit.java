@@ -1,7 +1,7 @@
-package com.example.an_addon.init;
+package com.colde.an_addon.init;
 
-import com.example.an_addon.ANProjectileShieldBlock;
-import com.example.an_addon.ANShieldMainMod;
+import com.colde.an_addon.ANProjectileShieldBlock;
+import com.colde.an_addon.ANShieldMainMod;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.registries.DeferredRegister;

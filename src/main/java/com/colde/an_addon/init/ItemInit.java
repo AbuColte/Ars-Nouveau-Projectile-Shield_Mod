@@ -1,6 +1,6 @@
-package com.example.an_addon.init;
+package com.colde.an_addon.init;
 
-import com.example.an_addon.ANShieldMainMod;
+import com.colde.an_addon.ANShieldMainMod;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;

@@ -1,19 +1,17 @@
-package com.example.an_addon;
+package com.colde.an_addon;
 
-import com.example.an_addon.entities.ANProjectileShieldBlockEntity;
-import com.example.an_addon.entities.ModBlockEntites;
+import com.colde.an_addon.entities.ANProjectileShieldBlockEntity;
+import com.colde.an_addon.entities.ModBlockEntites;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.event.level.BlockEvent;
 import org.jetbrains.annotations.Nullable;
 
 public class ANProjectileShieldBlock extends BaseEntityBlock {

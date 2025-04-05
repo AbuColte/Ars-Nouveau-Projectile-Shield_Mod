@@ -1,7 +1,7 @@
-package com.example.an_addon.entities;
+package com.colde.an_addon.entities;
 
-import com.example.an_addon.ANShieldMainMod;
-import com.example.an_addon.init.BlockInit;
+import com.colde.an_addon.ANShieldMainMod;
+import com.colde.an_addon.init.BlockInit;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;

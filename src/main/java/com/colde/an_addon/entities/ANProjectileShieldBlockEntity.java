@@ -1,35 +1,21 @@
-package com.example.an_addon.entities;
+package com.colde.an_addon.entities;
 
 import com.hollingsworth.arsnouveau.common.entity.EntityProjectileSpell;
-import com.hollingsworth.arsnouveau.setup.registry.ModEntities;
-import net.minecraft.client.particle.PortalParticle;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.*;
-import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
-import net.minecraft.world.phys.BlockHitResult;
-import net.minecraftforge.common.capabilities.CapabilityProvider;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
+
 public class ANProjectileShieldBlockEntity extends BlockEntity {
     public ANProjectileShieldBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntites.ARS_SHIELD_BE.get(), pos, state);

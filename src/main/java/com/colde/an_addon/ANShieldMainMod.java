@@ -1,8 +1,8 @@
-package com.example.an_addon;
+package com.colde.an_addon;
 
-import com.example.an_addon.entities.ModBlockEntites;
-import com.example.an_addon.init.BlockInit;
-import com.example.an_addon.init.ItemInit;
+import com.colde.an_addon.entities.ModBlockEntites;
+import com.colde.an_addon.init.BlockInit;
+import com.colde.an_addon.init.ItemInit;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
