@@ -1,6 +1,6 @@
 # Ars-Nouveau Projectile Shield Mod 1.20.1
 
-This mod adds a block to protect from AN Projectiles
+This mod adds a block to protect from Ars Nouveau Projectiles
 
 curio_version=5.3.1+1.20.1
 
